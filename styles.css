@@ -1,0 +1,237 @@
+
+.facebook-wrapper {
+    display: flex;
+    padding: 40px;
+}
+.column {
+    flex: 0.3;
+    width: 20%;
+
+}
+.column.middle {
+    flex: 1;
+}
+.column-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.upper {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+.facebook-story {
+    position: relative;
+    flex: 1;
+    border-radius: 10px;
+    transition: all -2s ease-in-out;
+    background-size: 100%;
+
+    
+}
+.story-1 {
+    background: white url("images/story4.jpg") ;
+    overflow: hidden;
+}
+.story-2 {
+    background-image: url("images/story2.jpg");
+}
+.story-3 {
+    background-image: url("images/story3.jpg");
+}
+.story-4 {
+    background-image:  url("images/story4.jpg");
+
+}
+.story-5 {
+    background-image: url("images/story5.jpg");
+}
+.facebook-story:not(:last-child) {
+    margin-right: 10px;
+}
+.facebook-story img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    transition: all -0.5s ease-in-out;   
+}
+.facebook-story:hover {
+    background-size: 105%;
+    filter: brightness(70%);
+}
+.story-1 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.story-create {
+    background-color: white;
+    position: absolute;
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 80px;
+}
+.story-create p {
+    font-size: 29px;
+    margin-top: 2px;
+    bottom: 10px;
+}
+.story-create img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -85%);
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.create img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.user-name {
+    position: absolute;
+    bottom: 5%;
+    margin: 0;
+    margin-left: 5px;
+    color: white;
+    font-size: 16px;
+}
+img.avatar  {
+    position:absolute;
+    top: 30px;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    z-index: 3;
+    border-radius: 50%;
+    border: 5px solid blue;
+   transition: unset;
+}
+.img.avatar:hover {
+    transform: unset;
+    filter: unset;
+}
+.next-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20%;
+    top: 150px;
+    transform: translate(-30%, -30%) ;
+    z-index: 3;
+    border: 1px solid rgb(206, 201, 201);
+}
+.next-button button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+.next-button img {
+    width: 20px;
+    padding-top: 5px;
+}
+.lower {
+    margin-top: 20px;
+    width: 98%;
+    background-color: white;
+    border-radius: 10px;
+}
+.lower-inner {
+    max-width: 90%;
+    padding: 10px 15px;
+    
+}
+.inner-partition {
+    display: flex;
+    position: relative;
+    
+}
+.inner-partition img {
+    width: 25%;
+    height: 70%;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.lower, .inner-partition img {
+    border: 1px solid rgb(233,233,233); 
+}
+.next-button, .lower, .facebook-story {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.14);
+}
+.input-wrapper {
+    flex: 1;
+    position: absolute; 
+    left: 70px;
+    margin-left: 10px;
+    width: 580px;
+    top: 5px;
+    border-radius: 20px;
+    background-color: #eee; 
+    padding-left: 5px;
+}
+.lower-image-wrapper {
+    margin-right:0px;
+}
+.inner-partition input {
+    width: 100%;
+    margin: 0;
+} 
+ input-wrapper input.comment {
+    width: 100%;
+    margin: 0;
+    background-color: #eee;
+    height: 30px;
+    border-radius: 50px;
+    padding-left: 10px;
+} 
+hr.rule {
+    border: 1px solid #eee;
+    width: 600px;
+}
+.buttons-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.buttons-wrapper button {
+    padding: 10px 35px;
+    border: none;
+    border-radius: 15px;
+    background-color:transparent;
+    font-size: 15px;
+    margin-left: 10px;
+    justify-content: space-around;
+
+}
+.button-1 img {
+    width: 15px;
+    
+}
+.button-2 img {
+    width: 15px;
+}
+.button-3 img {
+    width: 20px;
+ }
+
+.button-wrapper button:hover{
+    background-color: rgb(239,239,239);
+    cursor: pointer;
+}
